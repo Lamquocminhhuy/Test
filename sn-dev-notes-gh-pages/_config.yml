@@ -1,0 +1,7 @@
+theme: jekyll-theme-cayman
+title: SN Dev Notes
+description: ServiceNow Developer Notes collect from ServiceNow Developer officical site and ServiceNow Learning
+logo: /assets/css/logo.png
+relative_links:
+  enabled: true
+  collections: true
