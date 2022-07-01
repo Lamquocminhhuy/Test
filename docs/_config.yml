@@ -1,7 +1,11 @@
 theme: jekyll-theme-cayman
 title: ServiceNow Dev Notes
 description: ServiceNow Developer Notes collect from ServiceNow Developer officical site and ServiceNow Learning
-logo: /assets/css/logo.png
+logo: /assets/css/logo.webp
+author: Lam Quoc Minh Huy
+url: https://lamquocminhhuy.github.io/servicenow-dev-notes/
 relative_links:
   enabled: true
   collections: true
+plugins:
+  - jekyll-seo-tag
