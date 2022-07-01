@@ -56,4 +56,57 @@ Use the server-side API. Some actions:
 
 <div align="center">Example of Business Rule Script</div>
 
+UPDATING......
+
+## GlideRecord
+The GlideRecord class is the way to interact with the ServiceNow database from a script. 
+
+See more: [GlideRecord API](https://developer.servicenow.com/dev.do#!/reference/api/sandiego/server/c_GlideRecordScopedAPI)
+
+```
+NOTE: The GlideRecord API discussed here is a server-side API. 
+There is a client-side GlideRecord API for global applications. 
+The client-side GlideRecord API cannot be used in scoped applications.
+```
+
+## GlideDateTime
+GlideDateTime methods to perform date-time operations, such as instantiating a GlideDateTime object, performing date-time calculations,
+ formatting a date-time, or converting between date-time formats.
+
+
+```
+(function executeRule(current, previous /*null when async*/ ) {
+
+    // rightnow stores the current time
+    var rightnow = new GlideDateTime();
+    // Create a GlideDateTime object for the When needed date
+    var whenNeeded = new GlideDateTime(current.u_when_needed);
+    // Challenge:  Do not allow same-day requests
+    // Get the date portion of rightnow and whenNeeded (no timestamp)
+
+    // If the When needed date is before rightnow, do not write the record to the database
+    // Output an error message to the screen
+    if (whenNeeded.before(rightnow)) {
+        gs.addErrorMessage("When needed date cannot be in the past.  Your request has not been saved to the database.");
+        current.setAbortAction(true);
+    }
+    var today = rightnow.getLocalDate();
+    var istoday = whenNeeded.getLocalDate();
+    // Compare today and istoday to see if they are the same day
+    if (today.compareTo(istoday) == 0) {
+        gs.addErrorMessage("You cannot submit NeedIt requests for today.");
+        current.setAbortAction(true);
+    }
+
+
+
+})(current, previous);
+
+```
+
+<div align="center">Example of Bussiness Rule prevent users choose a date in the past and today.</div>
+
+
+## Debugging Business Rules
+
 
