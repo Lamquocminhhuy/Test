@@ -10,7 +10,6 @@
 
 ### a. ServiceNow Overview
 
-<details><summary>Click me</summary>
 The Now Platform is an Application Platform-as-a-Service (aPaas).
 
 The applications delivered by ServiceNow are divided into four different workflows:
@@ -30,12 +29,10 @@ There are three interfaces in Now Platform: Next Experience Unified Navigation (
 
 Roles contain a collection of permissions.
 
-</details>
+
 
 ### b. Lists and Filters
 
-<details>
-<summary>Click me</summary>
 Each column in a list corresponds to a field in the table. Each row corresponds to a record in the table.
 
 Context menus provide three different levels of list control:
@@ -60,13 +57,12 @@ Name of the interface we'll use to create a new view?
 
 > List collector.
 
-</details>
+
 <hr>
 
 ### c. Forms and Templates
 
-<details>
-<summary>Click me</summary>
+
   
 - Forms are displayed in the content frame.
 
@@ -103,14 +99,13 @@ Name of the interface we'll use to create a new view?
   
 </div>
 
-</details>
+<hr>
   
 # II. Collaboration (20%)
   
 ### a. Task Management
 
-<details>
-<summary>Click me</summary>
+
 
 Automation repeatable processes
 
@@ -147,12 +142,10 @@ Which of the following are ways to collaborate with team members on Tasks?
 
 > User presence, Activity Stream, Work Notes.
 
-  </details>
   
 ### b. Notifications 
   
-<details>
-<summary>Click me</summary>
+
 Emails, meeting notification, text messages.
   
 Sys admin can define notification in All > System Notification > Notifications. 
@@ -165,11 +158,10 @@ Sys admin can define notification in All > System Notification > Notifications.
 
 To customize the content message go to Show Notification Scripts.
 
-</details>
+
   
 ### c. Reportings
-<details>
-<summary>Click me</summary>
+
 _Now Platform Report Designer_ to build reports.
 
 > After you create a report, it appears in the All > Reports > View/Run module under the My reports list.
@@ -185,22 +177,21 @@ Define the report grouping > Configure.
 
 Choose colors, title, and chart properties > Style.
 
-  </details>
+ 
 
 ### d. User Administration
 
- <details>
-<summary>Click me</summary>
+
    A good practice is to assign roles to groups rather than to users.
    
    More about impersonate a user: [Docs](https://docs.servicenow.com/bundle/sandiego-platform-administration/page/administer/users-and-groups/concept/c_ImpersonateAUser.html#c_ImpersonateAUser)
-  </details>
+
+<hr>
   
 # III. Self-Service & Process Automation (20%)
 ### a. Knowledge Management
   
-<details>
-<summary>Click me</summary>
+
  - Informations store in Knowledge Base (KB).
  
  - Self-service > Knowledge Base or go to Service Portal /sp.
@@ -211,12 +202,11 @@ Choose colors, title, and chart properties > Style.
 
 - **The Most Useful** item in the Knowledge Management Service Portal displays articles that have the highest percentage of users marking them helpful.
 
-</details>
+
 
 ### b. Service Catalogue
 
-<details>
-<summary>Click me</summary>
+
 
 - Request items.
 - Access in All > Self-Service > Service Catalog.
@@ -229,25 +219,21 @@ Choose colors, title, and chart properties > Style.
 task-based records
 ```
 
-</details>
 
 ### c. Workflows/Flow Designer
 
-<details>
-<summary>Click me</summary>
+
 - Flows automate business logic.
 - Flow Designer bulding and enabling process automation, **without code**.
 - To access All > Process Automation > Flow Designer.
 - Flow Designer trigged by Record-based, Application-based, Schedule-based (Date).
 - Actions are operations executed by Flow Designer, such as looking up a record, updating a field value, requesting an approval, or logging a value.
 - Flow Designer Data : data pills 
-</details>
+
   
  # IV. Introduction to Development (10%)
 ## a. Scripting
 
-<details>
-<summary>Click me</summary>
 
 - Plugins are software components that provide additional optional features and functionalities within a ServiceNow instance.
  > Access: Sytem Definition > Plugins.
@@ -258,13 +244,12 @@ task-based records
 
 - UI Policy and Client Script run client-side.
 
-</details>
+
 
 
 ## b. Migration and Integration
 
-<details>
-<summary>Click me</summary>
+
 
 - An update set tracks changes to applications and platform features, then groups them together so they can be moved from one instance of ServiceNow to another. 
 
@@ -283,12 +268,11 @@ Standard integrations for ServiceNow include:
 > **Intergation Hub**
 
 
-</details>
 
 ## c. Development
 
-<details>
-<summary>Click me</summary>
+
+
 
 - App Engine Studio (AES) build apps even faster using app templates for pre-built solutions.
 - The Automated Test Framework (ATF) enables you to create and run automated tests to confirm that your instance works after making a change.
@@ -298,5 +282,4 @@ Standard integrations for ServiceNow include:
 ```
   The Guided Applicatio Creator is used to begin the creation of an application.
 ```
-</details>
 
