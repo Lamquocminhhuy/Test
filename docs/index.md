@@ -8,6 +8,12 @@
 * [Server-side Scripting](server-side-scripting.md)
 
 
+
+
+### Certificate Preparations
+* [CSA Notes](csa-notes.md)
+
+
 ## Learning Resources
 
 1. [New to ServiceNow](https://developer.servicenow.com/dev.do#!/learn/learning-plans/sandiego/new_to_servicenow)
