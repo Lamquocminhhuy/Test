@@ -129,6 +129,11 @@ UI Policy Scripts are only visible in the Advanced view. There are "**Execute if
 The Reverse if false option must be selected for the Execute if false script to run.
 ```
 
+UI actions conditions and actions can be scripted to define complex custom functionality.
+
+![image](https://user-images.githubusercontent.com/58679620/177100821-b8e18dd9-13c7-4990-94fa-3625f3ff5b43.png)
+
+
 #### 1.6. Review your knowledge
 
 | Criteria                                | Client Script | UI Policy |
