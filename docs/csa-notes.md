@@ -1,9 +1,5 @@
 <div align="center"> 
   <h1>ServiceNow CSA Notes</h1>
-  <h2>Exam Scope</h2>
-  
-![image](https://user-images.githubusercontent.com/58679620/177077915-ec121251-38a6-407f-845e-9fa89c56b2a0.png)
-  
 </div>
 
 # I. User Interface & Navigation (20%)
@@ -28,8 +24,6 @@ There are three interfaces in Now Platform: Next Experience Unified Navigation (
 > To access to Service Portal: _https://<instancename>.service-now.com/sp_.
 
 Roles contain a collection of permissions.
-
-
 
 ### b. Lists and Filters
 
@@ -57,31 +51,24 @@ Name of the interface we'll use to create a new view?
 
 > List collector.
 
-
 <hr>
 
 ### c. Forms and Templates
 
+Forms are displayed in the content frame.
 
-  
-- Forms are displayed in the content frame.
+Forms configured with the activity formatter display a stream of activities associated with the record.
 
-- Forms configured with the activity formatter display a stream of activities
-  associated with the record.
+Managing attachments > Click the attachments icon or drag and drop.
 
-- Managing attachments > Click the attachments icon or drag and drop.
+**Insert and Stay** : when you want to copy a record and just make a few changes.
 
-- Insert and Stay : when you want to copy a record and just make a few changes.
+Work notes are for internal conversation with those resolving the task.
 
-- Work notes are for internal conversation with those resolving the task.
+Additional comments are for customer visible comments.
 
-- Additional comments are for customer visible comments.
-
-- Form Designer, which allows you to add form views, as well as
-  add and remove fields on forms.
-
-- The admin or personalize_form role is required to configure forms using Form
-  Designer.
+Form Designer, which allows you to add form views, as well as add and remove fields on forms.
+The admin or personalize_form role is required to configure forms using Form Designer.
 
 <div align="center">
 
@@ -104,8 +91,6 @@ Name of the interface we'll use to create a new view?
 # II. Collaboration (20%)
   
 ### a. Task Management
-
-
 
 Automation repeatable processes
 
@@ -142,15 +127,13 @@ Which of the following are ways to collaborate with team members on Tasks?
 
 > User presence, Activity Stream, Work Notes.
 
-  
-### b. Notifications 
-  
+### b. Notifications
 
 Emails, meeting notification, text messages.
-  
-Sys admin can define notification in All > System Notification > Notifications. 
-  
-  ![image](https://user-images.githubusercontent.com/58679620/177081169-f9607874-437c-4d90-9056-82b3e1795016.png)
+
+Sys admin can define notification in All > System Notification > Notifications.
+
+![image](https://user-images.githubusercontent.com/58679620/177081169-f9607874-437c-4d90-9056-82b3e1795016.png)
 
 ```
   When to send, Who will received, What it will contain.
@@ -158,8 +141,6 @@ Sys admin can define notification in All > System Notification > Notifications.
 
 To customize the content message go to Show Notification Scripts.
 
-
-  
 ### c. Reportings
 
 _Now Platform Report Designer_ to build reports.
@@ -177,24 +158,21 @@ Define the report grouping > Configure.
 
 Choose colors, title, and chart properties > Style.
 
- 
-
 ### d. User Administration
 
+A good practice is to assign roles to groups rather than to users.
 
-   A good practice is to assign roles to groups rather than to users.
-   
-   More about impersonate a user: [Docs](https://docs.servicenow.com/bundle/sandiego-platform-administration/page/administer/users-and-groups/concept/c_ImpersonateAUser.html#c_ImpersonateAUser)
+More about impersonate a user: [Docs](https://docs.servicenow.com/bundle/sandiego-platform-administration/page/administer/users-and-groups/concept/c_ImpersonateAUser.html#c_ImpersonateAUser)
 
 <hr>
   
 # III. Self-Service & Process Automation (20%)
 ### a. Knowledge Management
-  
 
- - Informations store in Knowledge Base (KB).
- 
- - Self-service > Knowledge Base or go to Service Portal /sp.
+
+- Informations store in Knowledge Base (KB).
+
+- Self-service > Knowledge Base or go to Service Portal /sp.
 
 - Helpful ?, rating a star, leave a comment.
 
@@ -202,11 +180,7 @@ Choose colors, title, and chart properties > Style.
 
 - **The Most Useful** item in the Knowledge Management Service Portal displays articles that have the highest percentage of users marking them helpful.
 
-
-
 ### b. Service Catalogue
-
-
 
 - Request items.
 - Access in All > Self-Service > Service Catalog.
@@ -219,24 +193,22 @@ Choose colors, title, and chart properties > Style.
 task-based records
 ```
 
-
 ### c. Workflows/Flow Designer
-
 
 - Flows automate business logic.
 - Flow Designer bulding and enabling process automation, **without code**.
 - To access All > Process Automation > Flow Designer.
 - Flow Designer trigged by Record-based, Application-based, Schedule-based (Date).
 - Actions are operations executed by Flow Designer, such as looking up a record, updating a field value, requesting an approval, or logging a value.
-- Flow Designer Data : data pills 
+- Flow Designer Data : data pills
 
-  
- # IV. Introduction to Development (10%)
+# IV. Introduction to Development (10%)
+
 ## a. Scripting
 
-
 - Plugins are software components that provide additional optional features and functionalities within a ServiceNow instance.
- > Access: Sytem Definition > Plugins.
+
+  > Access: Sytem Definition > Plugins.
 
 - Client-side [see more](https://lamquocminhhuy.github.io/servicenow-dev-notes/client-side-scripting.html) and Server-side Scripting [see more](https://lamquocminhhuy.github.io/servicenow-dev-notes/server-side-scripting.html).
 
@@ -244,14 +216,9 @@ task-based records
 
 - UI Policy and Client Script run client-side.
 
-
-
-
 ## b. Migration and Integration
 
-
-
-- An update set tracks changes to applications and platform features, then groups them together so they can be moved from one instance of ServiceNow to another. 
+- An update set tracks changes to applications and platform features, then groups them together so they can be moved from one instance of ServiceNow to another.
 
 - Update Sets work by writing changes from tracked tables to the Customer Update [sys_update_xml] table. (newest change overide the old one).
 - Merge Update Sets the most recent change will be the one moved to the merged update set.
@@ -259,20 +226,16 @@ task-based records
 - To create an Update Set : All > System Update Sets > Local Update Sets. Then click New.
 
 Standard integrations for ServiceNow include:
-*	Login (Single Sign-On)
-*	LDAP
-*	Communications
-*	Monitoring
-*	Systems Management
+
+- Login (Single Sign-On)
+- LDAP
+- Communications
+- Monitoring
+- Systems Management
 
 > **Intergation Hub**
 
-
-
 ## c. Development
-
-
-
 
 - App Engine Studio (AES) build apps even faster using app templates for pre-built solutions.
 - The Automated Test Framework (ATF) enables you to create and run automated tests to confirm that your instance works after making a change.
@@ -283,3 +246,35 @@ Standard integrations for ServiceNow include:
   The Guided Applicatio Creator is used to begin the creation of an application.
 ```
 
+# V. Database Administration (30%)
+
+## a. Data Schema
+
+- Each record corresponds to a row in a table, Each field on a record corresponds to a column on that table.
+- Adding a reference field to a form makes the other fields in the referenced table available to the form (**Reference Lookup icon**).
+- You can use the Tables and the Tables & Columns module to create a new table.
+- When creating a new table -> Module with the plural of the table and Application menu with the same name as table Lable will be created.
+
+## b. Import Set & CMDB
+
+- An Import Set is used to import data from various data sources and then map that data into ServiceNow tables
+- Transform map is used to determine relationships between fields in an import set and an existing table.
+- Coalesce option allows you to update existing Target Table records when importing data from an import Set.
+
+- **Configuration Management Database (CMDB)**, including modules for hardware and other configuration items.
+
+* **Base Configuration Item** [cmdb] is the base CMDB table for non IT CIs.
+* **Configuration Item** [cmdb_ci] stores the basic attributes of all the CIs.
+* **CI Relationship** [cmdb_rel_ci] contains CI relationship data.
+
+What is a CI?
+
+> Tangible, Intangible, configuration item.
+
+## c. Application/Access Control
+
+- Access Control: Create Read Write Delete.
+- ACL (Access Control List): contains all of an instance's access control rules.
+- Conditions, roles, and a script can be configured in an access control.
+- security_admin role is required to modify access controll rules.
+- AC are evaluated first at the table-level (specific to general), then at field-level (specific to general).
