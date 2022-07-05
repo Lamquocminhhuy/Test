@@ -69,22 +69,16 @@ Additional comments are for customer visible comments.
 
 Form Designer, which allows you to add form views, as well as add and remove fields on forms.
 The admin or personalize_form role is required to configure forms using Form Designer.
-
-<div align="center">
-
+  
 ![image](https://user-images.githubusercontent.com/58679620/177075648-e4f6aa8a-c9df-4694-9d3b-b890ea4e9243.png)
 
-  <p>Form Designer vs Form Layout Interface</p>
-  
-</div>
+ <p>Form Designer vs Form Layout Interface</p>
 
-<div align="center"> 
   
 ![image](https://user-images.githubusercontent.com/58679620/177075502-dd39f269-95a7-4c24-bac8-275d48c1059b.png)
   
   <p> The list collector interface allows you to select multiple items from an Available list and remove items from a Selected list</p>
   
-</div>
 
 <hr>
   
