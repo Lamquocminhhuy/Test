@@ -6,6 +6,7 @@
 ### Contents
 * [Client-side Scripting](client-side-scripting.md)
 * [Server-side Scripting](server-side-scripting.md)
+* [ServiceNow Training Course](training-course.md)
 
 
 
